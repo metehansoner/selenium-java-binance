@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="local" verbose="1" parallel="tests" thread-count="1">
+
+    <test name="Chrome execution">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name="env" value="test"></parameter>
+        <classes>
+            <class name = "runner.MyRunner"/>
+        </classes>
+    </test>
+
+</suite>

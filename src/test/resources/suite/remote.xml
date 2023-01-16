@@ -1,0 +1,18 @@
+<?xml version = "1.0"encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="remote" verbose="1" parallel="tests" thread-count="1">
+    <test name="Chrome execution">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name="env" value="test"></parameter>
+        <classes>
+            <class name = "runner.MyRunner"/>
+        </classes>
+    </test>
+    <test name="Firefox execution">
+        <parameter name="env" value="test"></parameter>
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name = "runner.MyRunner"/>
+        </classes>
+    </test>
+</suite>
